@@ -1,0 +1,91 @@
+    .products {
+        width: 100%;
+        height: 1190px;
+        display: flex;
+        flex-direction: column;
+        &__title {
+            text-align: center;
+            font-family: 'Lighthaus';
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 74.9%;
+            color: #031412;
+            margin-bottom: 39px;
+            margin-top: 80px;
+        }
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 46px;
+        &__card {
+            position: relative;
+            width: 400px;
+            height: 450px;
+            &--title {
+                position: absolute;
+                top: 435px;
+                left: 166px;
+            }
+        }
+        .card-1 {
+            background-image: url(./../images/card-1.png);
+            background-size: cover;
+        }
+        .card-2 {
+            background-image: url(./../images/card-2.png);
+            background-size: cover;
+        }
+        .card-3 {
+            background-image: url(./../images/card-3.png);
+            background-size: cover;
+        }
+        .card-4 {
+            background-image: url(./../images/card-4.png);
+            background-size: cover;
+        }
+        .card-5 {
+            background-image: url(./../images/card-5.png);
+            background-size: cover;
+        }
+        .card-6 {
+            background-image: url(./../images/card-6.png);
+            background-size: contain;
+        }
+        @media screen and (max-width: 992px) {
+            .container {
+                max-width: 666px;
+            }
+            .products {
+                &__title {
+                    font-size: 24px;
+                }
+            }
+            .cards {
+                gap: 14px;
+            }
+            &__card {
+                position: relative;
+                width: 213px;
+                height: 218px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: 46px;
+            }
+            &__card {
+                position: relative;
+                width: 216px;
+                height: 216px;
+            }
+        }
+    }
