@@ -1,0 +1,23 @@
+@mixin center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin for-ipad-only {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-only {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-phone-only {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
